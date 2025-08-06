@@ -654,9 +654,35 @@ CRASH_MANAGER_CRASH_RECOVERY_ALERT_DESCRIPTION: |
   **Crash PID:** {}  
   **Recovery Time:** {}  
   **JVM Crash Dump Location:** {}  
+  **Crashes in last 24 hours:** {}  
   *Please include the crash dump file when reporting.*
   
   We apologize for any inconvenience caused.
+
+CRASH_MANAGER_UNEXPECTED_SHUTDOWN_TITLE: "PeerBanHelper may have shutdown unexpectedly"
+CRASH_MANAGER_UNEXPECTED_SHUTDOWN_DESCRIPTION: |
+  PeerBanHelper detected that the previous session may not have shut down properly. This could be due to system force shutdown, power loss, or other reasons.
+  
+  **Previous session info:**
+  {}
+  
+  **Detection time:** {}
+  
+  If this happens frequently, please check system stability or contact technical support.
+
+CRASH_MANAGER_FREQUENT_CRASHES_TITLE: "Frequent crashes detected"
+CRASH_MANAGER_FREQUENT_CRASHES_DESCRIPTION: |
+  PeerBanHelper has crashed {} times in the last 24 hours, indicating serious compatibility issues.
+  
+  **Recommended solutions:**
+  {}
+  
+  If the problem persists, please:
+  1. Check if the system has sufficient memory and storage space
+  2. Update to the latest JVM version
+  3. Report the issue to developers with crash logs
+  
+  You can find detailed crash reports in the crash-reports folder in the data directory.
 BOOT_TIME: "PeerBanHelper started in {}ms"
 ECOMODE_FAILED: "Windows EcoQos may incompatible with your platform: {}, operation cancelled"
 JBR_REQUIRED_TITLE: "Java Runtime Environment Incompatible"

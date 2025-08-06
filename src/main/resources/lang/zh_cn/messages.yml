@@ -659,9 +659,35 @@ CRASH_MANAGER_CRASH_RECOVERY_ALERT_DESCRIPTION: |
   **崩溃 PID:** {}  
   **恢复重新启动时间:** {}  
   **JVM 崩溃日志转储文件位置:** {}  
+  **最近 24 小时内崩溃次数:** {}  
   *在反馈问题时，请一同上传崩溃日志转储文件。*
   
   对此带来的不便，我们深表歉意。
+
+CRASH_MANAGER_UNEXPECTED_SHUTDOWN_TITLE: "PeerBanHelper 可能遭遇了意外关闭"
+CRASH_MANAGER_UNEXPECTED_SHUTDOWN_DESCRIPTION: |
+  PeerBanHelper 检测到上次可能未正常关闭。这可能是由于系统强制关闭、断电或其他原因导致的。
+  
+  **上次启动信息:**
+  {}
+  
+  **检测时间:** {}
+  
+  如果此类问题频繁发生，建议检查系统稳定性或联系技术支持。
+
+CRASH_MANAGER_FREQUENT_CRASHES_TITLE: "检测到频繁崩溃"
+CRASH_MANAGER_FREQUENT_CRASHES_DESCRIPTION: |
+  PeerBanHelper 在最近 24 小时内已崩溃 {} 次，这表明可能存在严重的兼容性问题。
+  
+  **建议解决方案:**
+  {}
+  
+  如果问题持续存在，请：
+  1. 检查系统是否有足够的内存和存储空间
+  2. 更新到最新的 JVM 版本
+  3. 向开发者报告问题并提供崩溃日志
+  
+  您可以在数据目录的 crash-reports 文件夹中找到详细的崩溃报告。
 BOOT_TIME: "PeerBanHelper 启动完成，用时 {}ms"
 ECOMODE_FAILED: "Windows EcoQos 效率模式可能与您的平台不兼容：{}，操作已取消"
 JBR_REQUIRED_TITLE: "Java 运行时环境不兼容"
